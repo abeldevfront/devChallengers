@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-family: "PT Serif";
+  font-weight: bold;
+  font-size: 36px;
+}
+p {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 400;
+}
+h2 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+}
+main p {
+  font-weight: 600;
+}
+img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 300px;
+}
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+header{
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  justify-content: space-between;
+}
+.text{
+  max-width: 35ch;
+  margin-right: 100px;
+}
+.gallery-perfil div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.gallery-perfil span {
+  transform: rotate(90deg);
+  place-self: flex-start;
+  margin-top: 30px;
+  margin-left: -50px;
+  display: block;
+  height:50px;
+  width: 100px;
+}
+.div2, .div5{
+  margin-top: 80px;
+}
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+.gallery-perfil > p{
+  margin-top: 10px;
+}
+footer{
+  text-align: center;
+  margin-top: 40px;
+}
+@media (max-width:700px){
+  .text{
+    margin-right: 0px;
+  }
+  .gallery{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
